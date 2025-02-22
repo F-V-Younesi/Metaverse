@@ -6,7 +6,6 @@ import speech_recognition as sr
 import time
 sr.__version__
 
-
 # Initialize the recognizer
 recognizer = sr.Recognizer()
 
@@ -44,7 +43,8 @@ with harvard as source:
          print("Sorry, I did not get that")#print(r.recognize_google(audio))
 
 
-##assembly ai(nano model) slow and not acc
+
+##assembly ai(nano model) slow and low accuracy
 
 !pip install assemblyai
 
@@ -73,8 +73,7 @@ print(transcript.text)
 #file input with cli:
 !speechmatics transcribe --lang ar  aud.wav
 
-#Batch Client Usage %%%%Slooow%%%
-
+#Batch Client Usage %%%%Slooow%%%:
 from speechmatics.models import ConnectionSettings, BatchTranscriptionConfig
 from speechmatics.batch_client import BatchClient
 from httpx import HTTPStatusError
