@@ -9,7 +9,7 @@ import time
 sr.__version__
 
 # Initialize the recognizer
-recognizer = sr.Recognizer()
+#recognizer = sr.Recognizer()
 s=time.time()
 r = sr.Recognizer()
 sound = sr.AudioFile('/content/test1.wav')
